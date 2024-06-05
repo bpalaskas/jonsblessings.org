@@ -174,7 +174,7 @@ hr {
   }
   
   .card {
-    width: calc(33.33% - 20px);
+    width: calc(45.33% - 20px);
     margin-bottom: 20px;
     padding: 20px;
     background-color: #fffbfb;
