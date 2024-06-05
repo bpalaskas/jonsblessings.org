@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Home - Public Outreach Initiative</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html#">
+            <img src="./assets/dove_branch_red_alpha.png" alt="Phoenix Rising Logo" width="45" height="45" class="d-inline-block align-top mr-2">
+            <b> Jon's Blessings</b>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#who-are-we">Our Mission</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://store.jonsblessings.org">Merch</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="./join.html">Join Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./donate.html#">Donate</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+  </nav>
+  <script>
+    function isMobileDevice() {
+  return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+}
+
+function toggleMenu() {
+  const navbar = document.getElementById('navbarNav');
+  navbar.classList.toggle('show');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navbarToggler = document.querySelector('.navbar-toggler');
+  navbarToggler.addEventListener('click', toggleMenu);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const menuItems = document.querySelectorAll('.nav-link');
+  menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      const navbar = document.getElementById('navbarNav');
+      navbar.classList.remove('show');
+    });
+  });
+});
+
+
+  </script>
+  <main>
+    <section id="hero" style="position: relative;">
+        <canvas id="animatedCanvas" style="position: relative; z-index: 1;"></canvas>
+        <div class="hero-text flex-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
+        z-index: 2;    object-position: 50% 50%;">
+          <h1 class="black-text blocky-text" style="text-align:center;">From the Streets to <b>Salvation</b></h1>
+          <p><br></p>
+          <div style="text-align:center;">
+            <b><p>Jon's Blessings is a Christian non-profit dedicated to extending
+              warmth, care, and the love of Christ to those experiencing homelessness.</p>
+            <p ></p></b></div>
+          <br><p></p>
+          <a href="index.html#contact" class="bg-burnt-orange" style="background-color: rgb(160, 13, 171);">Learn More</a>
+        </div>
+      </section>
+      
+      <hr class="thick-hr">
+
+      <p><br><br></p>
+      <section id="history">
+        <div class="container">
+          <div class="row">
+
+            <section class="card-section">
+              <div class="card">
+                <img src="./assets/outreach.png" alt="Graphic 1">
+                <h2 class="blocky-text" style="color:#de1010;">Outreach</h2>
+                <p style="color:#201e1e;">Through our mission, we provide essential blankets and clothing to shield
+                  against the harshness of the streets, while also fostering connections to
+                  shelters and local churches where individuals can find support, community,
+                  and spiritual nourishment. Additionally, we offer the gift of God's Word,
+                  distributing Bibles to those who seek out light. Together, through acts of
+                  service and faith, we strive to make a tangible difference in the lives of those
+                  in need, spreading light in the darkness and embodying the spirit of Jon's
+                  Blessings.
+                </p>
+              </div>
+              <div class="card">
+                <img src="./assets/education_symbol.png" alt="Graphic 2">
+                <h2 class="blocky-text" style="color:#de1010;">Education</h2>
+                <p style="color:#201e1e;">Navigating the political and digital landscapes alike can be very confusing.
+                  We provide resources and educational material to help activists and everyday 
+                  people alike make informed decisions for their local and state governments.
+                </p>
+              </div>
+              <div class="card">
+                <img src="./assets/representation_symbol.png" alt="Graphic 3">
+                <h2 class="blocky-text" style="color:#de1010;">Representation</h2>
+                <p style="color:#201e1e;">Many Americans feel that politicians and pundits alike do not represent them 
+                  or understand them.  We are looking to change that by giving people the tools
+                  and knowledge needed to represent their own communities in the political arena
+                  regardless of their political affiliations. 
+                </p>
+              </div>
+            </section>
+            
+          </div>
+            <div class="row" id="who-are-we">
+                <div class="col-md-6">
+                    <p><br></p> 
+                    <p class="text-black blocky-text">Who are we?</p>
+                    <p><br>
+                      We are group of young Christians dedicated to charity and spreading the good news
+                      of Jesus Christ. Rooted in the Christian principles of love and charity, our mission is
+                      straightforward: to offer a helping hand to the homeless, providing not only
+                      aid to local shelters, but also by restoring dignity and purpose through the
+                      power of Christ. We are grateful for your support in this journey of
+                      transformation, as we strive to bring blessings to even the darkest corners.
+                    </p></p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-end"> <!-- Added flexbox classes to position image -->
+                    <img src="./assets/jon_jlp.jpg" alt="Our History" class="img-fluid ml-5" style="max-width: 90%; max-height:90%;object-fit:cover;"> <!-- Added margin-left and max-width -->
+                </div>
+            </div>
+            <div class="row">
+              <p>
+                Join us in spreading warmth, hope, and light to those experiencing
+homelessness. Your donation to Jon's Blessings ensures blankets, clothing,
+and Bibles reach those in need, transforming lives one act of kindness at a
+time. Together, let's make a tangible difference. Donate today and be the
+blessing someone desperately needs.
+              </p>
+            </div>
+            <div class="row">
+              <p><p><br><br></p></p>
+                        <a href="https://donate.stripe.com/dR67tZf9922d9t65kl"
+                         class="bg-burnt-orange" style="background-color: rgb(160, 13, 171);">Donate Now</a>
+
+                        <p><p><br><br></p></p>
+            </div>
+            <hr class="thick-hr">
+
+
+        </div>
+    </section>
+    <p></p>
+    
+    <br><p><br></p>
+    <section class="card-section container">
+        <div class="row justify-content-center">
+
+      <h2 class="blocky-text-sm mb-3">Latest Tweets</h2>
+      <a class="twitter-timeline" href="https://twitter.com/NCO_Official_?ref_src=twsrc%5Etfw">Tweets by New Christian Order, our parent organization</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </section>
+    <p><br><p><br></p><br></p>
+    <hr class="thick-hr">
+    <p><br><br></p>
+    <section id="services" class="container">
+        <div class="row justify-content-center">
+            <p class="text-black blocky-text mb-5" style="justify-content: center;">What We Do</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 service-item">
+                <h2 class="blocky-text-sm mb-3">Ministry</h2>
+                <ul class="custom-bullet">
+                    <p>Many of our volunteers dedicate time out of their lives to preaching the good news of Jesus Christ
+                      to those in need.  We hand out bibles, pray with people, and help those in a dark place
+                      see the light of the Gospel.
+                    </p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 service-item">
+                <h2 class="blocky-text-sm mb-3">Charity</h2>
+                <ul class="custom-bullet">
+                   <p>Jon's Blessings donates a portion of all proceeds to reputable homeless shelters and transformation
+                    centers that provide services to the homeless, including access to washing machines, job placement,
+                    counseling, clothing drives, and more.
+                    </p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 service-item">
+                <h2 class="blocky-text-sm mb-3">Love</h2>
+                <ul class="custom-bullet">
+                    <p>Our members are dedicated to sharing Jesus' message of love and compassion not just through
+                      words, but through action in our daily lives.  Your donations help support our dedication
+                      to providing a helping hand to those in need. 
+                    </p>   
+                </ul>
+            </div>
+        </div>
+    </section>      <hr class="thick-hr">
+
+    <section id="history">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <p><br></p> <!-- Added for extra space -->
+                  <p class="text-black blocky-text">How can you help?</p>
+                  <p><br>
+                      Becoming a member of Jon's Blessings provides you with an opportunity to help those in dark places
+                      see the light.  You will have access to resources to aid in ministry, and opportunities to 
+                      participate in blanket giveaways and clothing drives.
+                  </p></p>
+                  
+              </div>
+              <div class="container"> <!-- Added flexbox classes to position image -->
+                <p><br></p>  
+                <a href="./join.html" class="bg-burnt-orange" style="background-color: rgb(160, 13, 171);">Join Us</a>
+              </div>
+          </div>
+      </div>
+      </section>
+    <p><br><br></p>
+    <hr>
+    <p><br><br></p>
+
+    <<section id="clients" class="container">
+      <div class="row">
+          <div class="col-md-6"> <!-- Specify half of the row width for the text -->
+              <p class="text-black blocky-text">Blessing the Streets, One Heart at a Time</p>
+              <p>
+                Within the heart of our organization, there is a story of faith, resilience, and
+kindness that inspires our work. Led by Jon Curtis, who both experienced
+and overcame homelessness, our mission is driven by a deep desire to bring
+hope and light to those facing similar challenges. With a true understanding
+of these hardships, Jon’s experience instilled a strong conviction to make a
+tangible difference in people’s lives.</p>
+              <p>
+                When Jon was homeless, something he wished was that people would be
+able to look past his situation, and see him as something more: a person
+with inherent worth, made in the image of a loving God. All too often, the
+struggles of street life are magnified by the callousness of society. Negative
+assumptions can prevent us from loving our neighbor, but we want to
+change that.</p>
+              <div class="row">
+                <br>
+                <p>
+                  <br>
+                </p><p></p>
+                <a href="https://linktr.ee/jontent117" class="bg-burnt-orange" style="background-color: rgb(160, 13, 171);">Follow Jon</a>
+              </div>
+          </div>
+          <div class="col-md-6"> <!-- Specify half of the row width for the image --><br>
+              <img src="./assets/jon_bio_pic.jpeg" alt="Our History" class="img-fluid" style="max-width: 100%;">
+          </div>
+      </div>
+  </section>
+  
+    <br><br>
+    <hr>
+    <p><br><br></p>
+
+    <section id="contact" class="container my-5">
+        <h2 class="text-black blocky-text">Contact Us</h2>
+        <p><br></p>
+        <!-- Cognito Forms Embed Code -->
+        <div class="cognito">
+<script src="https://www.cognitoforms.com/f/seamless.js" data-key="dX9GsPhOyU6RIfveYTS2Jw" data-form="3"></script>        </div>
+      </section>
+          
+  </main>
+  <footer class="text-white text-center py-4" style="background-color: #b30418; min-height:9px;max-height:12px;">
+    <p>Copyright 2024  Jon's Blessings Incorporated - Oregon, USA</p>
+  </footer>
+  
+  <script>
+    window.addEventListener('scroll', function () {
+  const navbar = document.querySelector('.navbar');
+  if (window.pageYOffset > 0) {
+    navbar.classList.remove('bg-transparent');
+    navbar.classList.add('bg-light');
+  } else {
+    navbar.classList.remove('bg-light');
+    navbar.classList.add('bg-transparent');
+  }
+});
+const canvas = document.getElementById("animatedCanvas");
+const ctx = canvas.getContext("2d");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particlesArray;
+
+// Particle class
+class Particle {
+  constructor(x, y, directionX, directionY, size, color) {
+    this.x = x;
+    this.y = y;
+    this.directionX = directionX;
+    this.directionY = directionY;
+    this.size = size;
+    this.color = color;
+  }
+
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+    ctx.fillStyle = this.color;
+    ctx.fill();
+  }
+
+  update() {
+    if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+      this.directionX = -this.directionX;
+    }
+    if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+      this.directionY = -this.directionY;
+    }
+    this.x += this.directionX;
+    this.y += this.directionY;
+    this.draw();
+  }
+}
+
+// Initialize particles
+function init() {
+  particlesArray = [];
+  let numberOfParticles = 80;
+
+  for (let i = 0; i < numberOfParticles; i++) {
+    let size = Math.random() * 5 + 1;
+    let x = Math.random() * (innerWidth - size * 2);
+    let y = Math.random() * (innerHeight - size * 2);
+    let directionX = (Math.random() * 0.4) - 0.2;
+    let directionY = (Math.random() * 0.4) - 0.2;
+    let color = randomColor();
+
+    particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
+  }
+}
+
+// Random color generator from the specified shades
+function randomColor() {
+  const colors = ['red', 'blue', '#0096FF'];
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
+// Animate particles
+function animate() {
+  requestAnimationFrame(animate);
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].update();
+  }
+}
+
+init();
+animate();
+
+$(document).ready(function(){
+    $(".client-container").on("click", function() {
+        $(this).toggleClass("active");
+    });
+});
+  </script>
+</body>
+</html>
