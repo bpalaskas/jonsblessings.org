@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Join - Jon's Blessings</title>
+  <title>Store - Jon's Blessings</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,20 +19,20 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
               
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#who-are-we">Our Mission</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="store.html">Merch</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="./join.html">Join Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./donate.html#">Donate</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#who-are-we">Our Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Merch</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="./join.html">Join Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./donate.html#">Donate</a>
+            </li>
+          </ul>
       </div>
     </div>
   </nav>
@@ -70,12 +70,11 @@ item.addEventListener('click', function() {
     <section id="hero" style="position: relative;">
         <canvas id="animatedCanvas" style="position: relative; z-index: 1;"></canvas>
         <div class="hero-text flex-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2;">
-          <h1 class="text-black blocky-text">Join Us</h1>
+          <h1 class="text-black blocky-text">Store</h1>
           <p><br></p>
-          <b><p>You might just
-        change the course of history.</b>
+          <b><p>For every item we sell, we donate clothes and a blanket to someone suffering from homelessness.</b>
           <br><p></p>
-          <a href="#application" class="bg-burnt-orange" style="background-color: rgb(160, 13, 171);">Join Now</a>
+          <a href="#application" class="bg-burnt-orange" style="background-color: rgb(223, 15, 60);">Join Now</a>
         </div>
     </section>
       
@@ -83,55 +82,30 @@ item.addEventListener('click', function() {
 
       <p><br><br></p>
         <section id="history">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p><br></p> <!-- Added for extra space -->
-                    <p class="text-black blocky-text">What are the benefits?</p>
-                    <p><br>
-                        Becoming a member of Jon's Blessings Incorporated gives you opportunities to devote your time to ministry
-                        and charity.  We provide members with resources to make a change in their community through
-                        bible giveaways, spiritual education, and clothing drives.
-                    </p></p>
-                </div>
-                <div class="col-md-6 d-flex justify-content-end"> <!-- Added flexbox classes to position image -->
-                    <img src="./assets/create2.avif" alt="Our History" class="img-fluid ml-5" style="max-width: 90%;"> <!-- Added margin-left and max-width -->
+            <div class="container">
+                <div class="section-title">Shirts</div>
+                <div class="product-card">
+                    <img src="./assets/shirtmodel1.webp" alt="Classic White Shirt">
+                    <div class="details">
+                        <h2>Dove with Cross Tee</h2>
+                        <p>This high-quality tee features the logo of Jon's Blessings' parent organization, the New Christian Order. 
+                            For each Dove Tee sold, we give one away along with a blanket and other items to a person suffering from homelessness.
+                        </p>
+                        <div class="price">$29.99</div>
+                        <a href="https://buy.stripe.com/aEU8y3f994al8p2146" class="buy-now">Buy Now</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </section>
     
     
     <p><br><p><br></p><br></p>
     <hr class="thick-hr">
     <p><br><br></p>
-    <section id="services" class="container">
-        <div id='application' class="row justify-content-center">
-            <p class="text-black blocky-text mb-5">Member Application</p>
-        </div>
-        <div class="row">
-           
-           <div style="justify-content: center;"></div>
-        </div>
-    </section>
-    
-    <p><br><br></p>
-    <hr>
-    <p><br><br></p>
-
-    <section id="clients" class="container">
-        <div class="row">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfnD794W_k2bfONrx1qes993_IuiPa3RAaVMrPczKlaP1HUtQ/viewform?embedded=true" width="340" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>        </div>
-        
-    </section>
-    <br><br>
-    <hr>
-    <p><br><br></p>
-
     
           
   </main>
-  <footer class="text-white text-center py-4" style="background-color: #960b92; min-height:9px;max-height:12px;">
+  <footer class="text-white text-center py-4" style="background-color: #ee132d; min-height:9px;max-height:12px;">
     <p>Copyright 2024 Jon's Blessings Incorporated - Oregon, USA</p>
   </footer>
   
@@ -203,7 +177,7 @@ function init() {
 
 // Random color generator from the specified shades
 function randomColor() {
-  const colors = ['#960b92', 'blue', '#0096FF'];
+  const colors = ['red', 'blue', '#0096FF'];
   return colors[Math.floor(Math.random() * colors.length)];
 }
 
